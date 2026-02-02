@@ -182,7 +182,7 @@ String name;
 ```
 ### SCANNER
 Used to read user inputs
-# Example
+
 import java.util.Scanner;
 
 Scanner scanner = new Scanner(System.in);
@@ -205,9 +205,8 @@ System.out.println("Runs at least once")
 } while (false);
 
 ### INTERFACES
-## Definition
 A contract that a class must implement. It means the implementation of the method will be found in another class
-# Example
+
 interface Payment {
 void pay() { // method name must be lowercase
 System.out.println("Pay with Card");
@@ -238,7 +237,7 @@ Allows for type safety in classes and methods
 
 List<String> names = new ArrayList<String>();
 names.add("Grace");
-/ names.add(10); will throw compile-time error
+names.add(10); will throw compile-time error
 
 ```
 class Box<T> {
@@ -259,5 +258,27 @@ System.out.println("Value: " + stringBox.get());
 Box<Integer> intBox = new Box<>();
 intBox.set(50);
 System.out.println("Value: " + stringBox.get());
+
+```
+
+## 10. terminal commands
+
+```bash
+javac Main.java   # compile
+java Main         # run
+mkdir             # create new directory
+rm -r             # delete a directory and its contents
+rm                # delete a file 
+touch             # create new file
+cp                # copy a file
+cp -r             # copy a directoty
+mv                # move or rename a file
+echo              # write into a file
+cat               # display file content
+grep              # search for text inside file
+ls                # list files
+cd folderName     # change directory
+clear             # clear terminal
+exit              # exit the terminal
 
 ```
